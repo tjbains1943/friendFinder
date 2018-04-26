@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/tjbains1943/friendFinder/issues"
   },
-  "homepage": "https://github.com/tjbains1943/friendFinder#readme"
+  "homepage": "https://github.com/tjbains1943/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
 }

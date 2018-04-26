@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Say Hello to your Lil Friend!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <h5 id="friend"></h5>
+             <img id="friendPic" src="" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="text-center">Survey Questions</h3>
+            </div>
+        </div>
+
+        <div>
+           
+                <h4><b><i class="fa fa-id-card-o" aria-hidden="true"></i> About You</b></h4>
+           
+               
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                          <h5>Name (Required)</h5>
+                        <input type="text" class="form-control" id="name" placeholder="Name" value="" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid name.
+                          </div>
+                      </div>
+                      </div>
+                      <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                          <h5>Link to Photo image (Required)</h5>
+                            <input type="text" class="form-control" id="image" placeholder="Image url" value="" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                              Please provide a valid url.
+                            </div>
+                        </div>
+                      </div>
+<div>
+            <h4><b>Question 1</b></h4>
+            <h6 class="mb-3">Your mind is always buzzing with unexplored ideas and plans.</h6>
+            <!-- Example single danger button -->
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <select class="form-control bg-info text-white" value="" id="q1" required>
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose an option.
+                      </div>
+                  </div>
+                  </div>
+            <h4><b>Question 2</b></h4>
+            <h6 class="mb-3">Generally speaking, you rely more on your experience than your imagination.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q2" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 3</b></h4>
+            <h6 class="mb-3">You find it easy to stay relaxed and focused even when there is some pressure.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q3" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 4</b></h4>
+            <h6 class="mb-3">You rarely do something just out of sheer curiosity.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q4" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 5</b></h4>
+            <h6 class="mb-3">People can rarely upset you.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q5" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 6</b></h4>
+            <h6 class="mb-3">You like Hot Cheetos.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q6" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 7</b></h4>
+            <h6 class="mb-3">It is often difficult for you to relate to other people’s feelings.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q7" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 8</b></h4>
+            <h6 class="mb-3">In a discussion, truth should be more important than people’s sensitivities.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q8" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 9</b></h4>
+            <h6 class="mb-3">You prefer dogs over cats.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <select class="form-control bg-info text-white" value="" id="q9" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+            <h4><b>Question 10</b></h4>
+            <h6 class="mb-3">You feel more energetic after spending time with a group of people.</h6>
+            <div class="form-row">
+                <div class="col-md-4 mb-5">
+                  <select class="form-control bg-info text-white mb-5" value="" id="q10" required>
+                      <option value="">Choose an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                      Please choose an option.
+                    </div>
+                </div>
+                </div>
+
+        
+        
+            <button type="submit" id="submit" class="btn btn-primary btn-block btn-lg mt-4" ><i class="fa fa-check-circle-o" aria-hidden="true"></i> Submit</button>
+          </form>
+          </div>
+          <div class="mt-4">
+        <a href="api/friends">API Friend List</a>
+        <p class="d-inline">|</p>
+        <a href="https://github.com/tjbains1943/friendFinder">Github Repo</a>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="/path/to/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+        <script>
+          
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+            <script>
+                $(document).ready(function() {
+                   
+                  function Finder(name, image, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10) {
+                    this.name = name;
+                    this.image = image;
+                    this.scores = [ q1,
+                    q2,
+                    q3,
+                    q4,
+                    q5,
+                    q6,
+                    q7,
+                    q8,
+                    q9,
+                     q10,]
+                  }
+                  console.log(2);
+                  console.log($("#q1").val());
+
+                  $("#submit").on("click", function(event) {
+                    event.preventDefault();
+                    console.log($("#q1").val());
+                    var finder = new Finder($("#name").val(), $("#image").val(), $("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val());
+                    console.log(finder);
+                    $.post('/api/friends', finder, function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+            // Set the name and image values of friend match
+            console.log(data);
+      			$('#friend').html("Name:" + data.name);
+		    	$("#friendPic").attr("src", data.image);
+		    	// // Pop open the modal dialog
+                $('.modal').modal('show');
+      		});
+                  })
+                  		});
+
+
+
+
+
+                
+
+
+
+            </script>
+</body>
+
+</html>
