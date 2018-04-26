@@ -369,17 +369,17 @@
 
                 $("#submit").on("click", function (event) {
                     event.preventDefault();
-                        var isValid = true;
+                        var valid = true;
                         $('.form-control').each(function () {
                             if ($(this).val() === "") {
-                                isValid = false;
+                                valid = false;
                             }
                         });
-                        if(isValid == false) {
+                        if(valid == false) {
                             alert("Please fill out all fields!")
                         }
                     //if everything is filled
-                    if (isValid == true) {
+                    if (valid == true) {
                         console.log($("#q1").val());
                         var finder = new Finder($("#name").val(), $("#image").val(), $("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val());
                         console.log(finder);
