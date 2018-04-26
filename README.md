@@ -4,7 +4,7 @@
 
 This app is used by pulling info from the backend. The user takes a survey and then hits submit. On submit a modal appears showing the user which person they mostly likely match up with as friends. This is done taking the difference for each question and comparing it to other people who took the survey. The results are matched up to each person who has already taken the survey, and the lowest difference is the friend that appears in the modal. The files are separated using the MVC pattern. Some form validation is used also.
 
-###Tools Used
+### Tools Used
 NPM-express, body-parser, path
 node.js, Html, Bootstrap, JavaScript, 
 
@@ -12,7 +12,7 @@ node.js, Html, Bootstrap, JavaScript,
 
 
 
-###Directions
+### Directions
 
 # Friend Finder - Node and Express Servers
 
